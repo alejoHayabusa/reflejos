@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comprueba tus reflejos 2.0</title>
+    <style>
+        #forma {
+            display: none;
+            position: relative;
+            box-shadow: 2px 2px 1px black;
+        }
+        h1,h2,p {
+            font-family: 'Acme', sans-serif;
+        }
+        h1 {
+            color: red;
+            text-shadow: 2px 2px 2px black;
+            font-size: 250%;
+        }
+        .letrero {
+            font-weight: 600;
+        }
+        .texto {
+            font-weight: 100;
+        }
+        #start {
+            background-color: rgba(201, 42, 42, 0.582);
+            color: white;
+            font-weight: 600;
+            height:30px;
+        }
+        #creado {
+            position:absolute;
+            bottom: 0px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido al juego: COMPRUEBA TUS REFLEJOS</h1>
+    <h2>Instrucciones:</h2>
+    <p id="instrucciones">Para comenzar haz click en el botón que aparece 
+        abajo, una vez des click te apareceran fíguras aleatorias, 
+        las cuales tendras que clickear antes de que el tiempo se acabe.
+        <br>La idea es que logres clickear la mayor cantidad de fíguras
+        posibles.
+    </p>
+
+    <button id="start">Click aquí para comenzar</button>
+    <p class="letrero">Tiempo: <span id="crono" class="texto">30s</span></p>
+    <p class="letrero">Cantidad de fíguras: <span id="fig" class="texto">0</span></p>
+    <div id="forma"></div>
+    <p id="creado">Juego creado por: Alejandro Gaviria Cano</p>
+</body>
+<script src="reflejos_2.0.js"></script>
+</html>
